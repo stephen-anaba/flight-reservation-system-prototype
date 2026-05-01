@@ -11,7 +11,7 @@ private:
 
 public:
     // non-default constructor
-    Notification(int id, const std::string& t, const std::string p, const std::string& c); 
+    Notification(int id, const std::string& t, const std::string& p, const std::string& c); 
     // member function
-    void send(); 
+    void Send(); 
 };

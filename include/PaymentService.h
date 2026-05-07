@@ -1,1 +1,7 @@
-// To be coded
+#pragma once
+#include "Payment.h"
+
+class PaymentService {
+public:
+    void Process(Payment& payment);
+};

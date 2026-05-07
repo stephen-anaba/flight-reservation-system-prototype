@@ -11,6 +11,6 @@ public:
   // non-default constructor
   Payment(int id, const std::string& m); 
   // member functions
-  void processPayment(); 
-  std::string getStatus() const;
+  void ProcessPayment(); 
+  std::string GetStatus() const;
 };

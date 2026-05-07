@@ -14,7 +14,8 @@ public:
     Flight(int id, const std::string& dep, const std::string& dest);
 
     void AddSeat(const Seat& seat); 
-
+    // const and non-const versions
+    std::vector<Seat>& GetSeats();
     const std::vector<Seat>& GetSeats() const; 
 
     void ShowFlight() const; 

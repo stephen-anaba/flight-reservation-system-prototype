@@ -9,9 +9,8 @@ Confirmation::Confirmation(int id, const std::string& name)
 }
 
 // member function
-void Confirmation::printConfirmation() const {
+void Confirmation::PrintConfirmation() const {
   std::cout << "Confirmation ID: " << confirmationID_ << std::endl;
   std::cout << "Passenger: " << passengerName_ << std::endl;
   std::cout << "Confirmed At: " << timeStamp_ << std::endl;
 }
-

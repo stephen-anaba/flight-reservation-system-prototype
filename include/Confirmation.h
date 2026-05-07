@@ -11,5 +11,5 @@ public:
     // non-default constructor
     Confirmation(int id, const std::string& name); 
     // member function
-    void printConfirmation() const; 
+    void PrintConfirmation() const; 
 };

@@ -12,6 +12,10 @@ const std::vector<Seat>& Flight::GetSeats() const {
     return seats_;
 }
 
+std::vector<Seat>& Flight::GetSeats() {
+  return seats_;
+}
+
 void Flight::ShowFlight() const {
   std::cout << "Flight #" << flightID_
           << " | " << departure_

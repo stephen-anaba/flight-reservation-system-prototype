@@ -1,24 +1,37 @@
+#include <iostream>
+
+// Include models
+#include "Passenger.h"
+#include "Flight.h"
+#include "Seat.h"
 #include "Reservation.h"
 
 int main() {
 
-    Passenger p1(1, "john_doe", "john@email.com", "1234");
+    // Create passenger
+    Passenger p1(1, "john_doe");
 
+    // Create flight
     Flight f1(100, "Chicago", "New York");
 
-    f1.addSeat(Seat(1, 1));
-    f1.addSeat(Seat(2, 1));
-    f1.addSeat(Seat(3, 2));
+    // Add seats to flight
+    f1.AddSeat(Seat(1, 1));
+    f1.AddSeat(Seat(2, 1));
 
-    Reservation r1(5001, 350.00, &p1, &f1);
+    // Create reservation
+    Reservation r1(5001, 300.0, &p1, &f1);
 
-    r1.reserveSeat(&f1.getSeats()[0]);
+    // Reserve a seat (uses reference version)
+    r1.ReserveSeat(f1.GetSeats()[0]);
 
-    r1.makePayment();
+    // Process payment
+    r1.MakePayment();
 
-    r1.confirmReservation();
+    // Confirm reservation
+    r1.ConfirmReservation();
 
-    r1.showReservation();
+    // Display result
+    r1.ShowReservation();
 
     return 0;
 }

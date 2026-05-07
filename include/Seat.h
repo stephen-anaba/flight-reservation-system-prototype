@@ -12,7 +12,7 @@ public:
     Seat(int id, int r); 
     
     // member function
-    void reserveSeat();
+    void ReserveSeat();
     // getters
     std::string GetStatus() const;
     int GetID() const;

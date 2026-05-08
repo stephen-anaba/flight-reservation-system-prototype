@@ -1,0 +1,22 @@
+body {
+    overflow-x: hidden;
+}
+
+.center-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    top: 0px;
+    width: 100%;
+    margin: 0px;
+    padding: 90px;
+    background-color: aqua;
+    color: rgb(65, 152, 192);
+}
+
+.header-text {
+    margin-right: 50px;
+}

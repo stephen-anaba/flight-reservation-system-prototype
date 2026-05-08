@@ -1,0 +1,40 @@
+import './styles.css'
+import paymentImage from './images/payment.png'
+import flightBooking from './images/flightBooking.png'
+
+
+export default function MainPage() {
+    return(
+        <div>
+            <div className='center-header'>
+                <p className='header-text'> Fligh Reservation System (FRS)</p>
+            </div>
+            <div className='carousel'>
+                <div className='carousel-slide-2'> </div>
+                    <div className='carousel-slide'>
+                        <div className='content-center'>
+                            <h2 className='option-text'> Flight Booking </h2>
+                            <img className='image-main' src={flightBooking} alt='Payment'/>
+                        </div>
+                    </div>
+                    <div className='carousel-slide'>
+                        <div className='content-center'>
+                            <h2 className='option-text'> Booking Payment </h2>
+                            <img className='image-main' src={paymentImage} alt='Payment'/>
+                        </div>
+                    </div>
+                    <div className='carousel-slide'>
+                        <div className='content-center'>
+                            <h2 className='option-text'> Notifications </h2>
+                        </div>
+                    </div>
+                    <div className='carousel-slide'>
+                        <div className='content-center'>
+                            <h2 className='option-text'> Account Information </h2>
+                        </div>
+                    </div>
+                <div className='carousel-slide-2'></div>
+            </div>
+        </div>
+    )
+}

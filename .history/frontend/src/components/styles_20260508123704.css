@@ -1,0 +1,95 @@
+body {
+    overflow-x: hidden;
+}
+
+.center-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    top: 0px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(196, 224, 255);
+    color: rgb(65, 152, 192);
+}
+
+.header-text {
+    margin-right: 1150px;
+}
+
+/* The carousel class is designed to create a horizontal scrolling container for the game cards */
+/* Method of this code was slightly modified but came from article by CSS-Tricks */
+/* source: https://css-tricks.com/creating-scroll-based-animations-in-full-view/ */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  width: max(100%, 50vw);
+
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  overflow-y: hidden;
+}
+
+.carousel-slide {
+  flex-shrink: 0;
+  width: calc(100% / 3);
+  aspect-ratio: .8;
+  margin: 15px;
+  padding: 15px;
+
+  border: 2px solid rgb(65, 152, 192);
+
+  scroll-snap-align: center;
+  animation: slide;
+  animation-timeline: view(inline);
+}
+
+
+
+@keyframes slide {
+  45%, 100% {
+    transform: scale(0.5);
+    border-radius: 20px;
+    filter: blur(4px) brightness(.8);
+  }
+
+  50% {
+    transform: scale(1);
+    border-radius: 20px;
+    filter: none;
+  }
+}
+
+/* End of carousel code */
+
+/* Reused carousel slide but utilized only for empty cards for displaying */
+/* The far left game when loading the webpage */ 
+.carousel-slide-2 {
+  flex-shrink: 0;
+  width: calc(100% / 3);
+  aspect-ratio: .8;
+  margin: -15px;
+  padding: 0px;
+
+  scroll-snap-align: center;
+}
+
+.image-main {
+    width: 100%;
+}
+
+.option-text {
+    font-size: 25px;
+}
+
+.content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/guestuser/dev/CPP/frs/include
+CXX_INCLUDES = -I/Users/guestuser/dev/CPP/frs/include -I/Users/guestuser/dev/CPP/frs/third_party/crow/include -I/Users/guestuser/homebrew/include -I/Users/guestuser/homebrew/opt/openssl@3/include
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64
 

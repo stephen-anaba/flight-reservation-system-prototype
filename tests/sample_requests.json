@@ -1,0 +1,16 @@
+{
+    "createPassenger": {
+        "username": "john_doe",
+        "email": "john@email.com"
+    },
+
+    "bookReservation": {
+        "flightID": 100,
+        "seatID": 1
+    },
+
+    "payment": {
+        "amount": 350,
+        "method": "Credit Card"
+    }
+}

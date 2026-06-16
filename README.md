@@ -4,8 +4,7 @@
 
 This project is a modular Flight Reservation System prototype implemented in C++ using the Crow HTTP framework.
 
-The system demonstrates:
-
+#### The system demonstrates:
 - Object-oriented programming (OOP)
 - REST API communication
 - Layered backend architecture
@@ -31,22 +30,25 @@ Controllers
 Services
         ↓
 Models
+```
 
 The backend is a modular monolithic system inspired by service-oriented design principles.
-🛠 Technologies Used
-Backend
-C++17
-Crow HTTP Framework
-CMake
-Frontend
-HTML5
-CSS3
-Vanilla JavaScript
-Testing
-Python
+
+#### Technologies Used
+- Backend
+- C++17
+- Crow HTTP Framework
+- CMake
+- Frontend
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Testing
+- Python
 requests library
 
-Project Structure
+#### Project Structure
+```txt
 FlightReservationSystem/
 │
 ├── frontend/
@@ -58,8 +60,9 @@ FlightReservationSystem/
 ├── build/
 ├── CMakeLists.txt
 └── README.md
+```
 
-Setup Instructions
+#### Setup Instructions
 1. Clone Crow
 From project root:
 mkdir -p third_party
@@ -117,7 +120,7 @@ This project is a prototype and does not yet include:
 - Production-level error handling
 The focus is on system design and modular backend architecture.
 
-Challenges & Solutions:
+### Challenges & Solutions:
 1. Frontend not rendering initially
 Problem: HTML file was not found by Crow server.
 Solution: Fixed incorrect relative file paths and ensured correct working directory usage.
@@ -134,7 +137,7 @@ Solution: Used browser DevTools (Console + Network tab) to debug missing functio
 Problem: HTTP 200 responses with no visible content.
 Solution: Properly set Content-Type headers and ensured responses returned valid HTML strings.
 
-Lessons Learned:
+### Lessons Learned:
 Relative paths in C++ servers depend on runtime working directory, not source location.
 Frontend issues often originate from simple naming mismatches (IDs/functions).
 Browser DevTools are essential for debugging full-stack applications.
@@ -142,7 +145,7 @@ Even “backend working” does not guarantee frontend integration.
 Small architecture improvements (like routing static files properly) significantly improve system stability.
 Clear separation of layers (Model/Service/Controller) makes debugging much easier.
 
-Future Improvements:
+### Future Improvements:
 - Database integration (PostgreSQL / SQLite)
 - JWT authentication system
 - Docker containerization
